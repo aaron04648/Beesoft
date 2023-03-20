@@ -1,0 +1,162 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#title{
+   
+    background-color: #ffcc84;
+    text-align: center;
+    padding: 0.5vw;
+    border-radius: 0.2vw;
+    color: white;
+    font-size: 1vw;
+
+}
+#head{
+    border-bottom:solid 0.2vw black ;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+#main{
+    background-color: #ffcc84;
+    margin-top: 4vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    box-shadow: 0.05vw 0.05vw 0.1vw black;
+
+}
+div{
+    font-size: 1.5vw;
+    color: black;
+    
+}
+#myOrder{
+  margin-left: 10vw;
+  padding: 2vw;
+  padding-right: 4vw;
+}
+#Orderlist{
+
+  list-style-type:circle;
+  padding-left:2vw;
+
+}
+#Orderlist li{
+  float:none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left:20vw;
+    overflow: hidden;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+     color: black;
+   
+    padding: 1vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+  }
+  
+  li a:hover {
+    background-color: orange;
+
+  }
+  #maintext{
+    display:flex;
+    border:solid 0.2vw #ffc084;
+    padding: 1vw;
+
+  }
+  .floatchild{
+    flex: 1;
+ 
+  }
+  .floatchild:first-child{
+    margin-right: 5vw;
+  }
+img:hover{
+    box-shadow: 0.05vw 0.05vw 0.1vw black;
+}
+#login{
+    left: 40vw;
+    position: absolute;
+    background-color: whitesmoke;
+    margin-top: 4vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 0.5vw;
+    box-shadow: 0.05vw 0.05vw 0.1vw black;
+}
+
+#showregister{
+    cursor: pointer;
+    font-size: 1vw;
+
+}#showregister:hover{
+    color:blue;
+
+}
+#close{
+    position: absolute;
+    margin-left: 11vw;
+}
+.Orders div{
+  height: 5vw;
+
+  overflow-y:scroll;
+
+ margin:2vw;
+}
+table{
+  border-radius: 0.4vw;
+  background-color: whitesmoke;
+}
+
+td:hover{
+  background-color: gray;
+}
+table, td, th {
+border:none;
+text-align: left;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+table tr:nth-child(even){background-color: transparent;}
+
+th, td {
+margin: 1vw;
+}
+figure {
+  text-align: center; 
+}figcaption {
+  display: inline-block; 
+  text-align: left;
+}
+#ourproducts{
+margin-left: 10vw;
+}
+.active{
+  background-color:orange; 
+  border-radius:0.2vw;
+}
