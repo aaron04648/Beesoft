@@ -42,16 +42,18 @@
 </ul>
 
 <div id="maintext">
+    <img class="floatchild" style="width:20vw; height:auto;" src="./assets/Logo beesoft.jpg" alt="">
     <div class="floatchild">
+         
         <h1>beesoft</h1>
 <p>Wir sind ein engagiertes Unternehmen </p>
 <p>bestehen aus 6 Schülern des Kollegiums </p>
 <p>Sprititus Sanctus Brig </p>
 <p>@beesoft.yes</p>
 <img onclick="clickMe()" src="./assets/instagram.png" alt="">
-    </div>
-        <img class="floatchild" style="  width:15vw; height:auto;" src="./assets/Logo beesoft.jpg" alt="">
-</div>
+   
+       
+
     </div>
     
 

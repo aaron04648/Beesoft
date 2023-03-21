@@ -63,7 +63,7 @@ mysqli_close($conn);
             <li><a href="events.php">Events</a></li>
             <li><a href="Gästebuch.php">Gästebuch</a></li>
             <li><a class="active" href="./Shop.php">Shop</a></li>
-            <li><img onclick="showregister()" src="./assets/Profil.png" alt="asdf"></li>
+            <li><img onclick="showregister()" src="./assets/Profil.png" class="icon" alt="asdf"></li>
         </ul>
 
         <div id="maintext">
@@ -76,13 +76,13 @@ mysqli_close($conn);
 
                     <div style="display:flex; justify-content:center margin:1vw;" >
                         <div >
-                            <img  class="Shop" style="width:8vw" src="./assets/Beesous_Aprikose.jpg" alt=""> <br>
-                            <img class="Shop" src="./assets/warenkorb1.png" alt="" onclick="showlogin2()">
+                            <img  class="Shop" style="width:15vw" src="./assets/Beesous_Aprikose.jpg" alt=""> <br>
+                            <img class="Shop icon" src="./assets/warenkorb1.png" alt="" onclick="showlogin2()">
                            
                         </div>
                         <div >
-                            <img class="Shop" style="width:8vw" src="./assets/Beesous_Kirsche.jpg" alt=""> <br>
-                            <img class="Shop" src="./assets/warenkorb.png" alt="" onclick="showlogin()">
+                            <img class="Shop" style="width:15vw;" src="./assets/Beesous_Kirsche.jpg" alt=""> <br>
+                            <img class="Shop icon" src="./assets/warenkorb.png" alt="" onclick="showlogin()">
                            
                         </div>
 

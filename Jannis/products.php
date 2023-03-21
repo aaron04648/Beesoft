@@ -24,8 +24,8 @@
 
     <div id="main">
         <ul>
-            <li><a href="./index.php"><img style="width:5vw; height:auto;"  src="./assets/Logo beesoft.jpg" alt=""></a>
-                 </li>
+            <li><a href="./index.php"><img style="width:5vw; height:auto;" src="./assets/Logo beesoft.jpg" alt=""></a>
+            </li>
             <li><a class="active" href="">Unsere Produkte
                 </a></li>
             <li><a href="team.php">Unseres Team</a></li>
@@ -36,28 +36,33 @@
 
 
         </ul>
-        <h1 id="ourproducts" style="color:#e78c4b;">Unsere Produkte</h1>
+        <h1 id="ourproducts" style="color:white;">Unsere Produkte</h1>
         <div id="maintext">
-<div>
-    <div >
-                <figure id="product1">
-                    <img style="width:10vw; height:auto;" src="./assets/Beesous_Kirsche.jpg" alt />
-                    <figcaption>beesous Aprikosengeschmack </figcaption>
-                </figure>
+            <div>
+                <div class="products">
+                    <figure id="product1">
+                        <img class="productsImg" style="width:10vw; height:auto;" src="./assets/Beesous_Kirsche.jpg" alt />
+                        <figcaption>Beesous Aprikosengeschmack </figcaption>
+                    </figure>
+                
+                    <figure id="product2">
+                        <img class="productsImg" style="width:10vw; height:auto;" src="./assets/Beesous_Kirsche.jpg" alt />
+                        <figcaption>Beesous Kirschgeschmack </figcaption>
+                    </figure>
+                </div>
             </div>
-            <div >
-                <figure id="product2">
-                    <img style="width:10vw; height:auto;" src="./assets/Beesous_Kirsche.jpg" alt />
-                    <figcaption>beesous Kirschgeschmack  </figcaption>
-                </figure>
+            <div id="description">
+                <p>
+                    Unser Ziel ist es, aus Walliser Bienenwachs, Aprikosenaroma und einer umweltschonenden Verpackung
+                    eine Lippenpomade herzustellen, welche gut schmeckt und gut für die Umwelt ist. Dank unserem Partner
+                    Alfred Chappuis haben wir es geschafft, genau diese Lippenpomade herzustellen Unsere Produkte
+                    besteht aussschliesslich aus umweltfreundlichen Inhaltsstoffen. Ausserdem ist die Lippenpomade ohne
+                    Wasser hergestellt worden, somit sind auch keine Konservierungsstoffe enthalten. Um dem
+                    Bienensterben entgegen zu wirken, haben wir us entschlossen, 0.10 Fr. pro verkaufte Lippenpomade an
+                    Walliser Imker zu spenden
+                </p>
             </div>
-</div>
-      <div id="description">
-        <p>
-            Unser Ziel ist es, aus Walliser Bienenwachs, Aprikosenaroma und einer umweltschonenden Verpackung eine Lippenpomade herzustellen, welche gut schmeckt und gut für die Umwelt ist. Dank unserem Partner Alfred Chappuis haben wir es geschafft, genau diese Lippenpomade herzustellen Unsere Produkte besteht aussschliesslich aus umweltfreundlichen Inhaltsstoffen. Ausserdem ist die Lippenpomade ohne Wasser hergestellt worden, somit sind auch keine Konservierungsstoffe enthalten. Um dem Bienensterben entgegen zu wirken, haben wir us entschlossen, 0.10 Fr. pro verkaufte Lippenpomade an Walliser Imker zu spenden
-        </p>
-      </div>
- 
+
 
 
         </div>

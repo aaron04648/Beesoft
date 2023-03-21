@@ -47,7 +47,7 @@ mysqli_close($conn);
 <div id="maintext">
     <div class="floatchild">
         <h1>Gästebuch</h1>
-        <h2>Angemeldete Benutzer </h2>
+        <h2>Registrierte Benutzer </h2>
         <div style="margin:1vw;">
             <?php 
             foreach($usernames as $username){

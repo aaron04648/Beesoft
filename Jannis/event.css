@@ -1,3 +1,8 @@
+
+html{
+  background: linear-gradient(90deg,#dfb594 0%, #dd9a62 50%,#df8d4b 100%);
+  background-color:rgba(227,178,138,255);
+}
 #ourteam{
     display: flex;
   justify-content: center;
@@ -6,16 +11,7 @@
 }
 
 
-#main{
-    background-color:rgba(227,178,138,255);
-    margin-top: 1vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding: 1vw;
-    border-radius: 0.5vw;
-    box-shadow: 0.05vw 0.05vw 0.1vw black;
 
-}
 html{
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -24,7 +20,7 @@ html{
   }
   #title{
    
-    background-color: #ffcc84;
+
     text-align: center;
     padding: 0.5vw;
     border-radius: 0.2vw;
@@ -33,7 +29,7 @@ html{
 
 }
 #head{
-    border-bottom:solid 0.2vw black ;
+  border-bottom:solid 0.2vw #c57021 ;
     margin-left: 5vw;
     margin-right: 5vw;
 }
@@ -69,8 +65,14 @@ ul {
     display: flex;
     justify-content: center ;
   }
+  #Texttitle{
+color: white;
+text-align: center;
+margin-bottom: 5vw;
+  }
 #maintext{
     width: 100%;
+    padding: 3vw;
 }.item{
     padding-right: 5vw;
 
@@ -89,8 +91,6 @@ ul {
     justify-content: start;
 
     font-size: 1.5vw;
-
-}
-p{
     width: 20vw;
 }
+
