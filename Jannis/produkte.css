@@ -50,7 +50,7 @@ figcaption{
     display: flex;
 }
 figure{
-    background-color: rgb(180, 133, 86);
+
     
     border-radius: 0.5vw;
 }
@@ -91,11 +91,11 @@ ul {
     margin-left: 2vw;
     display: flex;
 justify-content: center;
-    align-items: center;
+    
   font-size:1.5vw;
     padding: 1vw;
     
-    background-color: rgb(180, 133, 86);
+    
     
     border-radius: 0.5vw;
   }

@@ -37,10 +37,10 @@ mysqli_close($conn);
     <div id="main">
     <ul>
         <li><a href="index.php"><img style="width:5vw; height:auto;" src="./assets/Logo beesoft.jpg" alt=""></a> </li>
-        <li><a class="active" href="#home">Unsere Produkte</a></li>
+        <li><a  href="products.php">Unsere Produkte</a></li>
         <li><a href="team.php">Unseres Team</a></li>
-        <li><a href="events.php">Events</a></li>
-        <li><a href="" style="background-color:orange; border-radius:0.2vw;">Gästebuch</a></li>
+        <li><a href="event.php">Events</a></li>
+        <li><a href="" class="active">Gästebuch</a></li>
         <li><a href="Shop.php">Shop</a></li>
 </ul>
 
@@ -65,3 +65,8 @@ mysqli_close($conn);
 
 </body>
 </html>
+<script>
+    function clickMe() {
+        window.open("https://www.instagram.com/beesoft.yes/");
+    }
+</script>

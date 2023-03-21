@@ -24,7 +24,7 @@ mysqli_close($conn);
 <head>
     <title> beesoft </title>
     <link rel="icon" type="image/x-icon" href="./assets/Logo beesoft.jpg">
-    <link rel="stylesheet" type="text/css" href="beesoft.css" />
+    <link rel="stylesheet" type="text/css" href="Shop.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
 
 </head>
@@ -61,76 +61,76 @@ mysqli_close($conn);
             <li><a href="products.php">Unsere Produkte</a></li>
             <li><a href="unseresTeam.php">Unseres Team</a></li>
             <li><a href="events.php">Events</a></li>
-            <li><a href="">Gästebuch</a></li>
+            <li><a href="Gästebuch.php">Gästebuch</a></li>
             <li><a class="active" href="./Shop.php">Shop</a></li>
             <li><img onclick="showregister()" src="./assets/Profil.png" alt="asdf"></li>
         </ul>
 
         <div id="maintext">
             <div class="floatchild">
-                <h1>Meine Bestellungen</h1>
+                <h1 >Meine Bestellungen</h1>
                 <p>
                     <?php echo $greeting; ?>
                 </p>
                 <div class="Orders" id="Order" style="float:left">
 
+                    <div style="display:flex; justify-content:center margin:1vw;" >
+                        <div >
+                            <img  class="Shop" style="width:8vw" src="./assets/Beesous_Aprikose.jpg" alt=""> <br>
+                            <img class="Shop" src="./assets/warenkorb1.png" alt="" onclick="showlogin2()">
+                           
+                        </div>
+                        <div >
+                            <img class="Shop" style="width:8vw" src="./assets/Beesous_Kirsche.jpg" alt=""> <br>
+                            <img class="Shop" src="./assets/warenkorb.png" alt="" onclick="showlogin()">
+                           
+                        </div>
+
+                    <div class="Orders">
                     <div id="loginform1" style="display:none">
-                        <h3>Login</h3>
+                        <h3>Bestellen</h3>
                         <form method="post">
                             <label for="fname">Name</label><br>
                             <input type="text" id="fname" name="lname"><br>
                             <label for="lname">Email</label><br>
-                            <input type="text" id="lname" name="lemail"><br><br>
+                            <input type="text" id="lname" name="lemail"><br>
                             <label for="lname">Password</label><br>
                             <input type="password" id="lname" name="lpw"><br>
                             <label for="lname">Geschmack</label><br>
                             <input type="text" value=Kirsche name="aprico"><br>
-                            <input type="submit" value="anmelden">
+                            <input type="submit" value="Bestellen">
                         </form>
-                        <p id="showregister" onclick="showlogin()">noch nicht registriert</p>
+                      
                     </div>
                     <div id="loginform2" style="display:none">
-                        <h3>Login</h3>
+                        <h3>Bestellen</h3>
                         <form method="post">
                             <label for="fname">Name</label><br>
                             <input type="text" id="fname" name="lname"><br>
                             <label for="lname">Email</label><br>
-                            <input type="text" id="lname" name="lemail"><br><br>
+                            <input type="text" id="lname" name="lemail"><br>
                             <label for="lname">Password</label><br>
                             <input type="password" id="lname" name="lpw"><br>
                             <label for="lname">Geschmack</label><br>
-                            <input type="text" value=Aprikose name="aprico"><br>
-                            <input type="submit" value="anmelden">
+                            <input type="text" id="aprico" name="aprico" value="Aprikose" ><br>
+                            <input type="submit" value="Bestellen">
                         </form>
-                        <p id="showregister" onclick="showregister()">noch nicht registriert</p>
+                      
+                      </div>
                     </div>
-
-                    <div style="display:flex; justify-content:center" >
-                        <div class="Orders">
-                            <img style="width:8vw" src="./assets/Beesous_Aprikose.jpg" alt=""> <br>
-                            <img src="./assets/warenkorb.gif" alt="" onclick="showlogin2()">
-                           
-                        </div>
-                        <div class="Orders">
-                            <img style="width:8vw" src="./assets/Beesous_Kirsche.jpg" alt=""> <br>
-                            <img src="./assets/warenkorb.gif" alt="" onclick="showlogin()">
-                           
-                        </div>
-
-
                         <div class="Orders" id=myOrder style="float:left">
                             <h2>Warenkorb</h2>
                             <ul id=Orderlist>
                        
-
                             <?php
                             
                             error_reporting(E_ERROR | E_PARSE);
 
 
 // Database connection
+include 'signin.php';
 $conn = new mysqli('localhost','root','','beesoft_db');
-$query =   "SELECT * FROM orders" ;
+$query =   "SELECT * FROM orders WHERE userid='$username'" ;
 $result = $conn->query($query);
 $greeting ="";
 
@@ -171,9 +171,7 @@ while($row = $result->fetch_assoc()){
 
 </html>
 <script>
-    function clickMe() {
-        window.open("https://www.instagram.com/beesoft.yes/");
-    }
+    
     function showlogin() {
         if( document.getElementById("loginform1").style.display = "none"){
              document.getElementById("loginform1").style.display = "block";

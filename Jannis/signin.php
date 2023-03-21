@@ -5,8 +5,7 @@ error_reporting(E_ERROR | E_PARSE);
 $username = $_POST["lname"];
 $useremail= $_POST["lemail"];
 $userpw = $_POST["lpw"];
-$geschmack =$_Post["aprico"];
-$orderusername = $username;
+$geschmack = $_POST["aprico"];
 
 // Database connection
 $conn = new mysqli('localhost','root','','beesoft_db');
@@ -21,18 +20,22 @@ while($row = $result->fetch_assoc()){
         
         echo "<script>localStorage.setItem('key', '$username');</script>";
             
-            $greeting ="Guten Tag. Angemeldet als $username";
-            if($username && $geschmack){
-                if($conn->connect_error){
-                die("Connection failed :".$conn->connect_error);
-            }else{
-                $stmt = $conn->prepare("insert into orders(userid)values(?)");
-                $stmt->bind_param("s",$geschmack);
-                $stmt->execute();
+            $greeting ="Guten Tag. Angemeldet als $username 👋 <br> Sie haben erfolgreich eine $geschmack Lippenpomade bestellt ❗";
+            $conn = new mysqli('localhost','root','','beesoft_db');
             
-                
-            }
-            }
+if($username){
+    if($conn->connect_error){
+    die("Connection failed :".$conn->connect_error);
+}else{
+    $stmt = $conn->prepare("insert into orders(ordername,userid)values(?,?)");
+    $stmt->bind_param("ss",$geschmack,$username,);
+    $stmt->execute();
+    $stmt->close();
+    $conn->close();
+    
+}
+}
+
     }
         else{
             echo "<script>alert('Login fehlgeschlagen');</script>";
@@ -41,6 +44,7 @@ while($row = $result->fetch_assoc()){
     
     
 }
+
 
 
 

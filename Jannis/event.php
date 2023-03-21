@@ -29,7 +29,7 @@
     <div id="main">
     <ul>
         <li> <img style="width:5vw; height:auto;" src="./assets/Logo beesoft.jpg" alt=""></li>
-  <li><a class="active" href="./frontend/products.php">Unsere Produkte</a></li>
+  <li><a class="active" href="products.php">Unsere Produkte</a></li>
   <li><a href="team.php">Unseres Team</a></li>
   <li><a href="#contact">Events</a></li>
   <li><a href="Gästebuch.php">Gästebuch</a></li>

@@ -91,19 +91,7 @@ ul {
 img:hover{
     box-shadow: 0.05vw 0.05vw 0.1vw black;
 }
-#login{
-    left: 40vw;
-    position: absolute;
-    background-color: whitesmoke;
-    margin-top: 4vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding: 1vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    border-radius: 0.5vw;
-    box-shadow: 0.05vw 0.05vw 0.1vw black;
-}
+
 
 #showregister{
     cursor: pointer;
@@ -117,36 +105,8 @@ img:hover{
     position: absolute;
     margin-left: 11vw;
 }
-.Orders div{
-  height: 5vw;
 
-  overflow-y:scroll;
 
- margin:2vw;
-}
-table{
-  border-radius: 0.4vw;
-  background-color: whitesmoke;
-}
-
-td:hover{
-  background-color: gray;
-}
-table, td, th {
-border:none;
-text-align: left;
-}
-
-table {
-border-collapse: collapse;
-width: 100%;
-}
-
-table tr:nth-child(even){background-color: transparent;}
-
-th, td {
-margin: 1vw;
-}
 figure {
   text-align: center; 
 }figcaption {
