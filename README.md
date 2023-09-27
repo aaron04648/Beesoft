@@ -8,4 +8,8 @@ Before you can use this project, make sure the following prerequisites are in pl
 
     PHP installed (Version 7.0 or higher)
     MySQL database server installed
-    GitLab account (for collaboration and hosting the code)
+    GitHub account (for collaboration and hosting the code)
+Clone:
+https://github.com/aaron04648/php.git
+Database:
+The Folder DB contains the database
