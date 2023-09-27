@@ -1,5 +1,6 @@
 html{
-  background-color:#e88c4c;
+
+  background-image: url('./assets/background.jpg');
 }
 #ourteam{
     display: flex;

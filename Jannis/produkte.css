@@ -1,7 +1,7 @@
 html{
   font-family: Impact,Arial, Helvetica, sans-serif;
-  background-color: #ffc084;
-  background: linear-gradient(90deg, #ffc084 0%, #faa454 50%,#f78a25 100%);
+
+  background-image: url('./assets/background.jpg');
 }
 body{font-family: Arial, Helvetica, sans-serif;
 }

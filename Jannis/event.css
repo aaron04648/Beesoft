@@ -1,7 +1,7 @@
 
 html{
-  background: linear-gradient(90deg,#dfb594 0%, #dd9a62 50%,#df8d4b 100%);
-  background-color:rgba(227,178,138,255);
+
+  background-image: url('./assets/background.jpg');
 }
 #ourteam{
     display: flex;
